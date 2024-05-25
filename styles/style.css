@@ -164,19 +164,20 @@
 }
 
 .section-link {
-  text-shadow: 3px 2px 0 var(--background-title-color);
+  text-shadow: 2px 2px 0 var(--background-title-color);
   text-decoration: none;
 }
 
 .section-link:hover {
-  border-bottom: 1px solid var(--background-title-color);
+  border-bottom: 1px solid var(--section-title-color);
 }
 
 .section-link:focus {
   outline: none;
+  border: 1px solid var(--main-text-color);
 }
 
-.section-link-link:focus-visible {
+.section-link:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
 
