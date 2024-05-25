@@ -1,12 +1,35 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root .theme_light {
+  --image-body: url(../images/cover-image-light.png);
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+ 
+  --background-title-color: #ff8dcb;
+  --section-color: #ff0070;
+  --rec-color: transparent;
+  --background-color: #fff1f7;
+  --section-title-color: #353430;
+  --title-color: #353430;
+
+  --button-hover-color: rgba(50, 49, 45, 0.4);
+  --title-text-color: #ffc2e6;
+  --main-text-color: #353430;
+  --decorated-zone-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --image-body: url(../images/cover-image-light.png);
+    
+    
+    --background-title-color: #ff8dcb;
+    --section-color: #ff0070;
+    --background-color: #fff1f7;
+    --rec-color: transparent;
+    --section-title-color: #353430;
+    --title-color: #353430;
+
+    --button-hover-color: rgba(50, 49, 45, 0.4);
+    --title-text-color: #ffc2e6;
+    --main-text-color: #353430;
+    --decorated-zone-color: #353430;
+  }
 }
